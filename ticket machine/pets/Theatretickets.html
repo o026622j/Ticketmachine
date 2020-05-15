@@ -1,0 +1,79 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Pets page to style for assessment">
+    <link rel="stylesheet" href="style1.css">
+    <title>Tickets</title>
+    <script  src="Theatertickets.js" async></script>
+
+
+<header id="TicketFormbackground">
+    <section id="TicketSection">
+        <!---error -->
+        <div id="error"></div>
+        <!---ticket sale form -->
+        <form id="form" action="" method="GET">
+            <div class="form-title"> Ticket Sale</div>
+            <!-- name -->
+            <div>
+                <label for="name"> Name:</label>
+                <input id="name" name="name" type="text" required="" placeholder="Your Name">
+            </div>
+            <!-- Adress -->
+            <div>
+                <label for="adress"> Adress:</label>
+                <input id="adress" name="adress" type="adress" required="" placeholder="Delivery Adress">
+            </div>
+            <!-- shows -->
+            <div class="shows">
+                <label for="Shows">Shows:</label>
+                <select id="Shows" name="Shows">
+                    <option value="79">Phantom of the Opera £79</option>
+                    <option value="85" selected>Hamilton £85</option>
+                    <option value="67">Lion King £67</option>
+                    <option value="83">Miss Saigon £83</option>
+                </select>
+            </div>
+            <!-- ticket number -->
+            <div class="ticket-number">
+                <label for="ticketnumber" class="field-label"></label>Number of Seats:</label>
+                <input type="number" class="number-of-seats form-input-error" name="ticketnumber" min="1" required=""
+                       placeholder="Number of Seats">
+                <span class="form-error">Please select number of seats!</span>
+                </label>
+            </div>
+            <!-- delivery method -->
+            <div class="Delivery">
+                <label for="Delivery">Delivery Method:</label>
+                <select id="Delivery" name="Delivery">
+                    <option value="E-ticket" selected>E-ticket</option>
+                    <option value="Posted">Posted</option>
+                    <option value="boxoffice">Collect from Box Office</option>
+                </select>
+            </div>
+            <!-- button -->
+            <button id="submit" type="book-now">Book Now</button>
+            <!---show price -->
+            
+            ----------------------------------------------------
+            <p> 
+                Show Price: <span id="sprice"></span>
+            </p>
+            <!---Delivery price -->
+            <p>
+                Delivery Price: <span id="dprice"></span>
+            </p>
+            <!---Total price -->
+            <p class="text">
+                You have selected <span id="counts">0</span> seats for a price of £<span id="pricez">0</span>
+            </p>
+            <!---Total price -->
+           
+        </form>
+    </section>
+</header>
+

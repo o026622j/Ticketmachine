@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <!-- I hope you enjoy the game! -->
+    <head>
+        <title>Page Title</title>
+       
+        <script src="Fruitmachine.js"></script>
+
+    </head>
+    <body>
+        <div id = "instuct-div">
+        <p id = "instructions" > Get 3 of a kind in a row to win a jackpot!  </p>
+        </div>
+        <div class = "container">
+            <div id = "buttons">
+            <button class = "bet1">Bet $1</button>
+        <button class = "bet10" >Bet $10 </button>
+         <button class = "bet100" >Bet $100 </button>
+          </div>
+          <div id = "slot-div">
+            <p>
+            <span class = gold-text id = "money"> $$$$$$$ </span>
+            <br>
+             <span id =  "victoryMessage">Win the game    </span></p>
+                <p id = "slots" style="list-style: none;">
+         <span id = "row1">  Row 1  </span> <br>
+         <span id = "row2"> Row 2  </span> <br>
+         <span id = "row3">  Row 3   </span>
+         </p> 
+         </div>
+        <button id= spinbutton> </button>button>
+        <p id ="win" class = gold-text>  </p>
+
+        
+    </body>
+
+
+<style>
+    /* some of this css was borrowed  from https://cssgradientbutton.com/
+    and www.transparenttextures.com*/
+    body {
+       background-color: white;}
+
+    #instructions {
+         font-size: 20px; color: rgb(0, 0, 0);
+        font-family:arial, helvetica, sans-serif;
+    }
+    #instuct-div {
+        position: absolute;
+         width: 40%;
+    }
+    
+    .container{
+        display: flex;
+    }
+    
+    
+    #buttons {
+        margin-top: 95px;
+        text-align: left;
+    
+        margin-left: left;
+        margin-right: 20px ;
+        margin-bottom: 0px;
+        
+    
+       width: 50%;
+    
+      
+    }
+    #slot-div{
+        display: inline-block;
+        width: 40%;
+         flex-grow: 1;
+        text-align: center;
+        margin-left: auto;
+        margin-top: 0px;
+        padding-top: 0px;
+        padding-right: 10px;
+        padding-left: 20px;
+        padding-bottom: 0px;
+    }
+    
+    #slots {
+        display: inline-block;
+        text-align: left;
+        font-size: 50px;
+        color: rgb(0, 0, 0);
+        font-family: Georgia, serif;
+        text-shadow: 3px 3px rgba(0, 0, 0, 0.5);
+    }
+    
+    .gold-text  {
+        font-size: 40px;
+    color:   rgb(0, 0, 0);
+    
+    }
+    
+    #victoryMessage {
+        font-size: 20px;
+        color: rgb(0, 0, 0);
+        font-family:arial, helvetica, sans-serif;
+        
+    }
+    #intructions {
+        font-size: 20px;
+        color: rgb(0, 0, 0);
+        font-family:arial, helvetica, sans-serif;
+    }
+    
+    
+    .bet1{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-right: 20px;
+    border:1px solid;
+    background-color: green;
+    }
+    
+    .bet1:hover{
+         margin-right: 20px;
+     border:1px solid #5d7fbc;
+     background-color: #819bcb; 
+    }
+    .bet10{
+           margin-bottom: 20px;
+    border:1px solid #72021c;}
+    
+    .bet10:hover{
+     border:1px solid #450111;
+     background-color: #77021d;}
+    
+    
+    
+    .bet100{
+           margin-bottom: 20px;
+     
+    border:1px solid #34740e; 
+    background-color: rgb(8, 180, 8);}
+
+    
+    .bet100:hover{
+         
+     border:1px solid #224b09;
+     background-color: #36780f; }
+
+</style>
+
+
+</html>
